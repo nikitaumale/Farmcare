@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Dealers_Activity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/textViewDLTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dealers"
+                    android:textAlignment="center"
+                    android:textColor="@color/Green"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font"/>
+
+                <ListView
+                    android:id="@+id/listViewDL"
+                    android:layout_width="300dp"
+                    android:layout_height="549dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idSTTitle" />
+
+                <Button
+                    android:id="@+id/buttonDLBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/Green"
+                    android:text="Back"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

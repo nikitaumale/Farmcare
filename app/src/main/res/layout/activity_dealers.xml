@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Dealers_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dealers"
+                android:textAlignment="center"
+                android:textColor="@color/Green"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardVegetables"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginBottom="5dp"
+                    app:contentPadding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageViewVegetables"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/vegetable"
+                            android:padding="5dp"
+                            android:layout_marginEnd="20dp"/>
+
+                        <TextView
+                            android:id="@+id/textViewVegetables"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vegetables"
+                            android:textAlignment="center"
+                            android:textColor="#020742"
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardPulsesandCereals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageViewPulsesandCereals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/pulses"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/textViewPulsesandCereals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pulses and Cereals"
+                            android:textAlignment="center"
+                            android:textColor="#020742"
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFruits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginBottom="5dp"
+                    app:contentPadding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageViewFruits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/fruit"
+                            android:padding="5dp"
+                            android:layout_marginEnd="40dp"/>
+
+                        <TextView
+                            android:id="@+id/textViewFruits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fruits"
+                            android:textAlignment="center"
+                            android:textColor="#020742"
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginBottom="5dp"
+                    app:contentPadding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageViewOthers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/other"
+                            android:padding="5dp"
+                            android:layout_marginEnd="20dp"/>
+
+                        <TextView
+                            android:id="@+id/textViewOthers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Others"
+                            android:textAlignment="center"
+                            android:textColor="#020742"
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
